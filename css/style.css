@@ -1,0 +1,68 @@
+body {
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	font-family: 'Open Sans', sans-serif;
+	background: #ffffff;
+  overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+h1 {
+	color: #005eb8;
+}
+
+header {
+	position: absolute;
+}
+
+#navbar {
+  height: 5vh;
+  width: 100vw;
+  padding: 1vh;
+  align-items: left;
+  background-color: #005eb8;
+}
+
+#navbar div {
+  display: inline-block;
+  height: inherit;
+}
+
+#navbar div img {
+  height: inherit;
+}
+
+#back_icon {
+  transform: translateX(1vw);
+	cursor: pointer;
+}
+
+#nhs_logo {
+  transform: translateX(45vw);
+}
+
+#menu_icon {
+  transform: translateX(87vw);
+	cursor: pointer;
+}
+
+#navigation {
+	position: relative;
+	left: 100%;
+	width: 100%;
+	height: 95vh;
+	padding-left: 1vw;
+	background-color: #ffffff;
+	transition: 0.5s;
+}
+
+#navigation li {
+	display: block;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+#navigation.active {
+	left: 0;
+}
