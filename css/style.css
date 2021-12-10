@@ -10,10 +10,11 @@ body {
 
 h1 {
 	color: #005eb8;
+	padding-left: 2vw;
 }
 
 h2 {
-	color: #005eb8;
+	color: #ffffff;
 }
 
 header {
@@ -21,15 +22,16 @@ header {
 }
 
 #navbar {
-  height: 5vh;
+  height: 7vh;
   width: 100vw;
   padding: 1vh;
   align-items: left;
   background-color: #005eb8;
+	display: flex;
+	justify-content: space-between;
 }
 
 #navbar div {
-  display: inline-block;
   height: inherit;
 }
 
@@ -38,16 +40,16 @@ header {
 }
 
 #back_icon {
-  transform: translateX(1vw);
+	padding-left: 1em;
 	cursor: pointer;
 }
 
 #nhs_logo {
-  transform: translateX(45vw);
+
 }
 
 #menu_icon {
-  transform: translateX(87vw);
+	padding-right: 1em;
 	cursor: pointer;
 }
 
@@ -56,15 +58,20 @@ header {
 	left: 100%;
 	width: 100%;
 	height: 95vh;
-	padding-left: 1vw;
 	background-color: #ffffff;
 	transition: 0.5s;
 }
 
+#navigation .list {
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	background-color: #005eb8;
+}
+
 #navigation .link {
 	display: block;
-	margin-top: 10vh;
-	margin-bottom: 10vh;
+	margin-bottom: 5vh;
+	cursor: pointer;
 }
 
 #navigation .link a {
@@ -75,6 +82,23 @@ header {
 	left: 0;
 }
 
-#logoutbutton {
+button {
+	border: none;
+	border-radius: 0;
+}
 
+#settingslinks {
+	display: none;
+	margin-left: 5vw;
+}
+
+#settingslinks.active {
+	display: block;
+}
+
+#logoutbutton {
+	background-color: #828282;
+	margin-left: 2vw;
+	padding-left: 1em;
+	padding-right: 1em;
 }
