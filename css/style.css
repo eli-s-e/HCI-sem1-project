@@ -12,6 +12,10 @@ h1 {
 	color: #005eb8;
 }
 
+h2 {
+	color: #005eb8;
+}
+
 header {
 	position: absolute;
 }
@@ -57,12 +61,20 @@ header {
 	transition: 0.5s;
 }
 
-#navigation li {
+#navigation .link {
 	display: block;
 	margin-top: 10vh;
 	margin-bottom: 10vh;
 }
 
+#navigation .link a {
+	text-decoration: none;
+}
+
 #navigation.active {
 	left: 0;
+}
+
+#logoutbutton {
+
 }
