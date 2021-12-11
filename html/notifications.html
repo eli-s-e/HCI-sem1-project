@@ -17,7 +17,9 @@
       <div id="menu_icon"><img src="../img/menuicon.png" alt="menu button" onclick="navigationToggle()"></div>
     </div>
     <div id="navigation">
-      <h1>Menu</h1>
+      <div id="title_section">
+        <h1>Menu</h1>
+      </div>
       <ul class="list">
         <li class="link"><a href="./appointments.html"><h2>Appointments</h2></a></li>
         <li class="link"><a href="./checkin.html"><h2>Check in</h2></a></li>
@@ -32,7 +34,37 @@
     </div>
   </header>
   <main>
-    <h1>Notification Settings</h1>
+    <div id="title_section">
+      <h1>Notification Settings</h1>
+      <h3>If you are checked in for an appointment, the app can send you notifications to update you on any changes
+        to your appointment, or to call you in to the clinic.</h3>
+    </div>
+    <div id="main_content">
+      <div class="settings_content_section">
+        <h2>Push notifications</h2>
+        <h3>Receive notifications to your mobile device. This requires an internet connection.</h3>
+        <div class="switch_container">
+          <span><h3>ON</h3></span>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+          <span><h3>OFF</h3></span>
+        </div>
+      </div>
+      <div class="settings_content_section">
+        <h2>SMS notifications</h2>
+        <h3>Receive notifications via text message. This does not require an internet connection.</h3>
+        <div class="switch_container">
+          <span><h3>ON</h3></span>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+          <span><h3>OFF</h3></span>
+        </div>
+      </div>
+    </div>
   </main>
 </body>
 </html>

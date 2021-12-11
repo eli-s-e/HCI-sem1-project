@@ -1,20 +1,25 @@
+/**********general**********/
 body {
 	justify-content: center;
 	align-items: center;
 	margin: auto;
 	font-family: 'Open Sans', sans-serif;
 	background: #ffffff;
+	color: #005eb8;
   overflow-x: hidden;
 	overflow-y: hidden;
 }
 
 h1 {
-	color: #005eb8;
-	padding-left: 2vw;
+	color: inherit;
 }
 
 h2 {
-	color: #ffffff;
+	color: inherit;
+}
+
+h3 {
+	color: inherit;
 }
 
 header {
@@ -23,11 +28,16 @@ header {
 
 main {
 	position: absolute;
+	width: 100%;
+	height: 100%;
 	top: 10vh;
+	/*main and navigation display on the same area so z-index for each is specified
+	- do not change*/
 	z-index: 0;
+	overflow-y: scroll;
 }
 
-/*header bar*/
+/**********header bar**********/
 #navbar {
 	position: fixed;
 	top: 0;
@@ -62,7 +72,7 @@ main {
 	cursor: pointer;
 }
 
-/*navigation*/
+/**********navigation**********/
 #navigation {
 	position: fixed;
 	top: 10vh;
@@ -72,6 +82,10 @@ main {
 	background-color: #ffffff;
 	transition: 0.5s;
 	z-index: 1;
+}
+
+#navigation h2 {
+	color: #ffffff;
 }
 
 #navigation .list {
@@ -110,9 +124,77 @@ button {
 
 #logoutbutton {
 	background-color: #828282;
+	margin-top: 5vh;
 	margin-left: 2vw;
 	padding-left: 1em;
 	padding-right: 1em;
 }
 
-/*body content*/
+/**********body content**********/
+#main_content {
+	width: 50%;
+	position: inherit;
+	margin-top: 5vh;
+	padding-left: 2vw;
+}
+
+#title_section { /*contains title and possibly description of pges*/
+	margin-left: 2vw;
+	margin-right: 2vw;
+}
+
+/**********settings pages styling**********/
+.settings_content_section { /*sections for content layout on settings pages*/
+	margin-bottom: 10vh;
+}
+
+/**********toggle switch settings**********/
+.switch_container {
+	width: 150px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	margin-top: 2vh;
+	width: 60px;
+	height: 34px;
+}
+
+.switch input { /*hide default check box*/
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: .4s;
+	background-color: #828282;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #ffffff;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #005eb8;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
