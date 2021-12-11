@@ -21,7 +21,16 @@ header {
 	position: absolute;
 }
 
+main {
+	position: absolute;
+	top: 10vh;
+	z-index: 0;
+}
+
+/*header bar*/
 #navbar {
+	position: fixed;
+	top: 0;
   height: 7vh;
   width: 100vw;
   padding: 1vh;
@@ -53,13 +62,16 @@ header {
 	cursor: pointer;
 }
 
+/*navigation*/
 #navigation {
-	position: relative;
+	position: fixed;
+	top: 10vh;
 	left: 100%;
 	width: 100%;
 	height: 95vh;
 	background-color: #ffffff;
 	transition: 0.5s;
+	z-index: 1;
 }
 
 #navigation .list {
@@ -102,3 +114,5 @@ button {
 	padding-left: 1em;
 	padding-right: 1em;
 }
+
+/*body content*/
