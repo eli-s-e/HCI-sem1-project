@@ -136,6 +136,7 @@ button {
 	position: inherit;
 	margin-top: 5vh;
 	padding-left: 2vw;
+	padding-right: 2vw;
 }
 
 #title_section { /*contains title and possibly description of pges*/
@@ -197,4 +198,12 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(26px);
+}
+
+/**********mobile or other device responsiveness settings**********/
+/**********these must be kept at bottom after css declarations**********/
+@media(max-width: 792px) {
+	#main_content {
+		width: 100%;
+	}
 }
