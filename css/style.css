@@ -37,6 +37,12 @@ main {
 	overflow-y: scroll;
 }
 
+button {
+	border: none;
+	border-radius: 0;
+	cursor: pointer;
+}
+
 /**********header bar**********/
 #navbar {
 	position: fixed;
@@ -108,11 +114,6 @@ main {
 	left: 0;
 }
 
-button {
-	border: none;
-	border-radius: 0;
-}
-
 #settingslinks {
 	display: none;
 	margin-left: 5vw;
@@ -147,6 +148,19 @@ button {
 /**********settings pages styling**********/
 .settings_content_section { /*sections for content layout on settings pages*/
 	margin-bottom: 10vh;
+}
+
+.changedetailsbutton {
+	background-color: #005eb8;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	margin-left: 2vw;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.changedetailsbutton h3 {
+	color: #ffffff;
 }
 
 /**********toggle switch settings**********/
