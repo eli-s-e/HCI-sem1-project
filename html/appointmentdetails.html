@@ -34,7 +34,36 @@
     </div>
   </header>
   <main>
-
+    <div class="main_content" id="centercontent">
+      <div class="title_section">
+        <h1>Appointment details</h1>
+      </div>
+      <div class="details">
+        <h3>Clinic: Fractures</h3>
+        <h3>Time: 12:00 PM</h3>
+        <h3>Doctor: Doctor's name</h3>
+        <h3>Location: Room 12</h3>
+      </div>
+      <div class="title_section">
+        <h1>Location</h1>
+        <h3>To find the fractures clinic, please follow the blue colour coded pathways in the hospital,
+          or follow the map below.</h3>
+      </div>
+      <div id="hospitalmap"><img src="../img/map.png"></div>
+      <div class="inline_buttons">
+        <button class="bigbutton" id="appointment-reschedule" onclick=""><h1>Call to reschedule appointment</h1></button>
+        <button class="bigbutton" id="appointment-cancel" onclick="toggleCancelPopup()"><h1>Cancel appointment</h1></button>
+      </div>
+    </div>
+    <div id="popupscreen"></div>
+    <div id="cancelpopup">
+      <div id="closeicon" onclick="toggleCancelPopup()"><img src="../img/close.png"></div>
+      <h1>Are you sure you want to cancel your appointment?</h1>
+      <div class="inline_buttons">
+        <button class="bigbutton" id="no-cancel" onclick=""><h2>No, call to reschedule</h2></button>
+        <button class="bigbutton" id="yes-cancel" onclick=""><h2>Yes, cancel my appointment</h2></button>
+      </div>
+    </div>
   </main>
 </body>
 </html>

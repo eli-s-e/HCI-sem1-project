@@ -118,8 +118,16 @@ function faqExpand3() {
 
 //show and hide qr code
 function toggleQR() {
-	let nav = document.querySelector('#QRpopupscreen');
+	let nav = document.querySelector('#popupscreen');
 	let nav2 = document.querySelector('#QRpopup');
+	nav.classList.toggle('active');
+	nav2.classList.toggle('active');
+}
+
+//cancel appointment
+function toggleCancelPopup() {
+	let nav = document.querySelector('#popupscreen');
+	let nav2 = document.querySelector('#cancelpopup');
 	nav.classList.toggle('active');
 	nav2.classList.toggle('active');
 }

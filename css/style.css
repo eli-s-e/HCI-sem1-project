@@ -207,7 +207,7 @@ button {
 	margin-top: 2vh;
 }
 
-#QRpopupscreen {
+#popupscreen {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -219,11 +219,11 @@ button {
 	display: none;
 }
 
-#QRpopupscreen.active {
+#popupscreen.active {
 	display: block;
 }
 
-#QRpopup {
+#QRpopup, #cancelpopup {
 	position: fixed;
 	top: 10vh;
 	left: 37.5vw;
@@ -235,15 +235,16 @@ button {
 	padding-right: 1vw;
 	background-color: #000000;
 	border-radius: 25px;
+	text-align: center;
 	z-index: 2;
 	display: none;
 }
 
-#QRpopup.active {
+#QRpopup.active, #cancelpopup.active {
 	display: block;
 }
 
-#QRpopup h1 {
+#QRpopup h1, #cancelpopup h1 {
 	color: #ffffff;
 }
 
@@ -390,6 +391,51 @@ button {
 	display: none;
 }
 
+/**********appointments**********/
+.appointments {
+	margin-bottom: 10vh;
+}
+
+#ontime {
+	margin-top: 1vh;
+	color: #ffffff;
+	background-color: #39a340;
+}
+
+#late {
+	margin-top: 1vh;
+	color: #ffffff;
+	background-color: #c73636;
+}
+
+#more {
+	background-color: #005eb8;
+}
+
+#more a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#appointment-reschedule {
+	width: 40%;
+	background-color: #ffb742;
+}
+
+#appointment-cancel {
+	width: 40%;
+	background-color: #c73636;
+}
+
+#no-cancel {
+	width: 40%;
+	background-color: #ffb742;
+}
+
+#yes-cancel {
+	width: 40%;
+	background-color: #c73636;
+}
 /**********contact us faq**********/
 #helpandsupport {
 	margin-top: 5vh;
@@ -511,7 +557,7 @@ input:checked + .slider:before {
 		width: 90%;
 	}
 
-	#QRpopup {
+	#QRpopup, #cancelpopup {
 		width: 50vw;
 		left: 25vw;
 	}
