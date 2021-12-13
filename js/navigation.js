@@ -97,3 +97,17 @@ function eprConfirmation() {
 	homepage.style.display = "none";
 	eprconfirmation.style.display = "block";
 }
+
+//show extra information for faq
+function faqExpand1() {
+	let nav = document.querySelector('#faqexpand1');
+	nav.classList.toggle('active');
+}
+function faqExpand2() {
+	let nav = document.querySelector('#faqexpand2');
+	nav.classList.toggle('active');
+}
+function faqExpand3() {
+	let nav = document.querySelector('#faqexpand3');
+	nav.classList.toggle('active');
+}

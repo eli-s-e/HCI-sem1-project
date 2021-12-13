@@ -55,7 +55,7 @@ button {
 	text-decoration: none;
 }
 
-.bigbutton h1 {
+.bigbutton h1, .bigbutton h2, .bigbutton h3 {
 	color: #ffffff;
 }
 
@@ -259,6 +259,9 @@ button {
 	padding-right: 2vw;
 	padding-top: 2vh;
 	padding-bottom: 2vh;
+	border-radius: 5px;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
 }
 
 .details hr {
@@ -323,28 +326,27 @@ button {
 	display: none;
 }
 
-#emailauth {
-	background-color: #c73636;
+/**********contact us faq**********/
+#helpandsupport {
+	margin-top: 5vh;
 }
 
-/**********settings pages styling**********/
-.settings_content_section { /*sections for content layout on settings pages*/
-	margin-bottom: 10vh;
+#faq .details {
+	cursor: pointer;
 }
 
-.changedetailsbutton {
-	background-color: #005eb8;
-	margin-top: 2vh;
-	margin-bottom: 2vh;
-	margin-left: 2vw;
+#faqexpand1, #faqexpand2, #faqexpand3 {
+	display: none;
 }
 
-.changedetailsbutton h3 {
-	color: #ffffff;
+#faqexpand1.active, #faqexpand2.active, #faqexpand3.active {
+	display: block;
 }
 
 /**********toggle switch settings**********/
 .switch_container {
+	margin-left: auto;
+	margin-right: auto;
 	width: 150px;
 	display: flex;
 	justify-content: space-between;

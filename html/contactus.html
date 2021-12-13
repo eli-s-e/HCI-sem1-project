@@ -17,7 +17,7 @@
       <div id="menu_icon"><img src="../img/menuicon.png" alt="menu button" onclick="navigationToggle()"></div>
     </div>
     <div id="navigation">
-      <div id="title_section">
+      <div class="title_section">
         <h1>Menu</h1>
       </div>
       <ul class="list">
@@ -34,7 +34,45 @@
     </div>
   </header>
   <main>
-
+    <div class="main_content" id="centercontent">
+      <div class="title_section">
+        <h1>Contact us</h1>
+        <h3>Email: westsuffolk@nhs.net</h3>
+        <h3>Phone: 01234 567890</h3>
+        <h3>Address: Hardwick Ln., Bury St. Edmunds, Suffolk, IP33 2QZ</h3>
+      </div>
+      <div class="title_section" id="helpandsupport">
+        <h1>Help and support</h1>
+      </div>
+      <div id="faq">
+        <div class="details" onclick="faqExpand1()">
+          <h2>How do I access my appointments?</h2>
+          <div id="faqexpand1">
+            <h3>You can view and access your upcoming appointments <a href="./appointments.html">here</a>
+              where you can click on an individual appointment to view their location and directions.
+            appointments can also be accessed using the menu in the top right-hand corner of the screen.</h3>
+          </div>
+        </div>
+        <div class="details" onclick="faqExpand2()">
+          <h2>Where do I check in?</h2>
+          <div id="faqexpand2">
+            <h3>You can check in <a href="./checkin.html">here</a> or from the menu in the top right-hand
+              corner of the screen. If you have been asked for a QR code, you can find it <a href="">here</a>
+              or from the <a href="./checkin.html">home page</a>, which you can also access using the menu
+              in the top right-hand corner of the screen.</h3>
+          </div>
+        </div>
+        <div class="details" onclick="faqExpand3()">
+          <h2>What do I do if I'm late?</h2>
+          <div id="faqexpand3">
+            <h3>If you are late, you will be prompted to provide this information when completing the check in process.
+              If you are 5-10 minutes late, your appointment will still go ahead, however if you are more than 10 mimutes late
+              your appointment will be cancelled automatically and must be rescheduled. If you would like to reschedule an
+              appointment, you can do so <a href="">here.</a></h3>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </body>
 </html>
