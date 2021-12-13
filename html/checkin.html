@@ -17,24 +17,31 @@
       <div id="menu_icon"><img src="../img/menuicon.png" alt="menu button" onclick="navigationToggle()"></div>
     </div>
     <div id="navigation">
-      <div id="title_section">
+      <div class="title_section">
         <h1>Menu</h1>
       </div>
       <ul class="list">
-        <li class="link"><a href="./appointments.html"><h2>Appointments</h2></a></li>
-        <li class="link"><a href="./checkin.html"><h2>Check in</h2></a></li>
+        <li class="link"><a href="./login.html"><h2>Home</h2></a></li>
         <li class="link"><a href="./contactus.html"><h2>Contact us</h2></a></li>
-        <li class="link" onclick="settingsToggle()"><h2>Settings &#9660;</h2></li>
-        <div id="settingslinks">
-          <li class="link"><a href="./userdetails.html"><h2>View and change user details</h2></a></li>
-          <li class="link"><a href="./notifications.html"><h2>Notification settings</h2></a></li>
-        </div></li>
       </ul>
-      <button id="logoutbutton"><h2>Log out</h2></button>
+      <div class="title_section" id="stafflogin">
+        <a href="./stafflogin.html"><h3>Staff? Sign in here</h3></a>
+      </div>
     </div>
   </header>
   <main>
-
+    <div class="main_content" id="centercontent">
+      <div class="progress_bar">
+        <div class="progress"><h3>20%</h3></div>
+      </div>
+      <div class="checkin_step">
+        <div class="title_section">
+          <h1>Please verify your mobile number. You will receive a confirmation text from us shortly.</h1>
+        </div>
+        <form id="phone_verification" onsubmit="">
+         <input id="mobile" type="tel" name="mobile" />
+       </form>
+    </div>
   </main>
 </body>
 </html>

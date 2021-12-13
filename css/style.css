@@ -41,6 +41,8 @@ button {
 	border: none;
 	border-radius: 0;
 	cursor: pointer;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 /**********header bar**********/
@@ -87,7 +89,7 @@ button {
 	height: 95vh;
 	background-color: #ffffff;
 	transition: 0.5s;
-	z-index: 1;
+	z-index: 2;
 }
 
 #navigation h2 {
@@ -111,7 +113,7 @@ button {
 }
 
 #navigation.active {
-	left: 0;
+	left: 0%;
 }
 
 #settingslinks {
@@ -127,12 +129,18 @@ button {
 	background-color: #828282;
 	margin-top: 5vh;
 	margin-left: 2vw;
-	padding-left: 1em;
-	padding-right: 1em;
+}
+
+#logoutbutton a {
+	text-decoration: none;
+}
+
+#stafflogin a {
+	color: #828282;
 }
 
 /**********body content**********/
-#main_content {
+.main_content {
 	width: 50%;
 	position: inherit;
 	margin-top: 5vh;
@@ -140,9 +148,70 @@ button {
 	padding-right: 2vw;
 }
 
-#title_section { /*contains title and possibly description of pges*/
+#centercontent {
+	left: 25%;
+	text-align: center;
+}
+
+.title_section { /*contains title and possibly description of pges*/
 	margin-left: 2vw;
 	margin-right: 2vw;
+}
+
+/**********index page**********/
+#beginbutton {
+	background-color: #005eb8;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+#beginbutton a {
+	text-decoration: none;
+}
+
+#beginbutton h1 {
+	color: #ffffff;
+}
+
+#indexdesc h2 {
+	color: #828282;
+}
+
+#QRbanner {
+	position: fixed;
+	bottom: 0;
+	height: 8vh;
+	width: 50%;
+	background-color: #000000;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	display: flex;
+	justify-content: center;
+}
+
+#QRbanner h2 {
+	color: #ffffff;
+	margin-right: 5vh;
+}
+
+#QRicon img {
+	height: 40px;
+	margin-top: 2vh;
+}
+
+/**********check in process**********/
+.progress_bar {
+	background-color: #bfbfbf;
+}
+
+.progress {
+	height: 24px;
+	background-color: #005eb8;
+	width: 20%;
+}
+
+.progress h3 {
+	color: #ffffff;
 }
 
 /**********settings pages styling**********/
@@ -155,8 +224,6 @@ button {
 	margin-top: 2vh;
 	margin-bottom: 2vh;
 	margin-left: 2vw;
-	padding-left: 1em;
-	padding-right: 1em;
 }
 
 .changedetailsbutton h3 {

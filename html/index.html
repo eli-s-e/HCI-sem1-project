@@ -5,31 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Index</title>
+    <title>Welcome</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/navigation.js"></script>
 </head>
 <body>
   <header>
     <div id="navbar">
-      <div id="back_icon"><img src="../img/back.png" alt="back button"></div>
+      <div id="back_icon"><!--back button not shown on index page-->></div>
       <div id="nhs_logo"><img src="../img/nhswslogo.png" alt="nhs logo"></div>
       <div id="menu_icon"><img src="../img/menuicon.png" alt="menu button" onclick="navigationToggle()"></div>
     </div>
     <div id="navigation">
-      <div id="title_section">
+      <div class="title_section">
         <h1>Menu</h1>
       </div>
       <ul class="list">
-        <li class="link"><a href="./login.html"><h2>Log in</h2></a></li>
-        <li class="link"><a href="./checkin.html"><h2>Check in</h2></a></li>
+        <li class="link"><a href="./login.html"><h2>Home</h2></a></li>
         <li class="link"><a href="./contactus.html"><h2>Contact us</h2></a></li>
       </ul>
-      <button id="logoutbutton"><h2>Log out</h2></button>
+      <div class="title_section" id="stafflogin">
+        <a href="./stafflogin.html"><h3>Staff? Sign in here</h3></a>
+      </div>
     </div>
   </header>
   <main>
-
+    <div class="main_content" id="centercontent">
+      <div class="title_section">
+        <h1>Check in, and we will let you know when to come in via text.</h1>
+        <button id="beginbutton"><a href="./checkin.html"><h1>Begin</h1></a></button>
+      </div>
+      <div class="title_section" id="indexdesc">
+        <h2><i>Did you know?</i></h2>
+        <h2>Once signed in, you can also manage appointments and patient records.</h2>
+      </div>
+      <div id="QRbanner">
+        <h2>Been asked for a QR code?</h2>
+        <span id="QRicon"><img src="../img/qr-code-icon.png" alt="qr code icon"></span>
+      </div>
+    </div>
   </main>
 </body>
 </html>
