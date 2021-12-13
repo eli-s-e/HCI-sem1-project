@@ -45,6 +45,20 @@ button {
 	padding-right: 1em;
 }
 
+.bigbutton {
+	background-color: #005eb8;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+.bigbutton a {
+	text-decoration: none;
+}
+
+.bigbutton h1 {
+	color: #ffffff;
+}
+
 /**********header bar**********/
 #navbar {
 	position: fixed;
@@ -159,20 +173,6 @@ button {
 }
 
 /**********index page**********/
-#beginbutton {
-	background-color: #005eb8;
-	margin-top: 5vh;
-	margin-bottom: 5vh;
-}
-
-#beginbutton a {
-	text-decoration: none;
-}
-
-#beginbutton h1 {
-	color: #ffffff;
-}
-
 #indexdesc h2 {
 	color: #828282;
 }
@@ -202,18 +202,53 @@ button {
 /**********check in process**********/
 .progress_bar {
 	background-color: #bfbfbf;
+	margin-bottom: 5vh;
 }
 
-.progress {
+#progress {
 	height: 24px;
 	background-color: #005eb8;
 	width: 20%;
 }
 
-.progress h3 {
+#progress h3 {
 	color: #ffffff;
 }
 
+#step1 {
+
+}
+
+#step2, #step3, #step4 {
+	display: none;
+}
+
+#mobile, #dob, #surname {
+	width: 50%;
+	height: 2em;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	margin-top: 5vh;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+#code_input {
+	width: 70%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+#code_input input {
+	width: 15%;
+	height: 2em;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	margin-top: 5vh;
+	font-family: inherit;
+	font-size: inherit;
+}
 /**********settings pages styling**********/
 .settings_content_section { /*sections for content layout on settings pages*/
 	margin-bottom: 10vh;

@@ -32,15 +32,45 @@
   <main>
     <div class="main_content" id="centercontent">
       <div class="progress_bar">
-        <div class="progress"><h3>20%</h3></div>
+        <div id="progress"><h3 id="progresstext">20%</h3></div>
       </div>
-      <div class="checkin_step">
+      <div class="checkin_step" id="step1">
         <div class="title_section">
           <h1>Please verify your mobile number. You will receive a confirmation text from us shortly.</h1>
         </div>
-        <form id="phone_verification" onsubmit="">
-         <input id="mobile" type="tel" name="mobile" />
-       </form>
+        <h1><input type="tel" id="mobile" /></h1>
+        <button class="bigbutton" id="mobile_submit" onclick="goToStep2()"><h1>Verify</h1></button>
+      </div>
+      <div class="checkin_step" id="step2">
+        <div class="title_section">
+          <h1>Please enter the 4-digit code you received via text.</h1>
+        </div>
+        <div id="code_input">
+          <h1><input type="text" id="code1" maxlength="1"/></h1>
+          <h1><input type="text" id="code2" maxlength="1"/></h1>
+          <h1><input type="text" id="code3" maxlength="1"/></h1>
+          <h1><input type="text" id="code4" maxlength="1"/></h1>
+        </div>
+        <button class="bigbutton" id="mobile_confirm" onclick="goToStep3()"><h1>Confirm</h1></button>
+      </div>
+      <div class="checkin_step" id="step3">
+        <div class="title_section">
+          <h1>Please enter your date of birth.</h1>
+        </div>
+        <h1><input type="date" id="dob" /></h1>
+        <button class="bigbutton" id="dobsubmit" onclick="goToStep4()"><h1>Confirm</h1></button>
+      </div>
+      <div class="checkin_step" id="step4">
+        <div class="title_section">
+          <h1>Please enter your surname.</h1>
+        </div>
+        <h1><input type="text" id="surname" /></h1>
+        <button class="bigbutton" id="surnamesubmit"><a href="./home.html"><h1>Confirm</h1></a></button>
+      </div>
+      <div id="QRbanner">
+        <h2>Been asked for a QR code?</h2>
+        <span id="QRicon"><img src="../img/qr-code-icon.png" alt="qr code icon"></span>
+      </div>
     </div>
   </main>
 </body>
