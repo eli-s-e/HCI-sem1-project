@@ -157,9 +157,10 @@ button {
 .main_content {
 	width: 50%;
 	position: inherit;
-	margin-top: 5vh;
-	padding-left: 2vw;
-	padding-right: 2vw;
+	margin-top: 2vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-bottom: 20vh;
 }
 
 #centercontent {
@@ -182,6 +183,7 @@ button {
 	bottom: 0;
 	height: 8vh;
 	width: 50%;
+	left: 25%;
 	background-color: #000000;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
@@ -200,8 +202,8 @@ button {
 }
 
 /**********check in process**********/
-.progress_bar {
-	background-color: #bfbfbf;
+#progress_bar {
+	background-color: #dedede;
 	margin-bottom: 5vh;
 }
 
@@ -219,7 +221,7 @@ button {
 
 }
 
-#step2, #step3, #step4 {
+#step2, #step3, #step4, #confirmation, #latecheckin, #popup1, #popup2, #complete {
 	display: none;
 }
 
@@ -248,6 +250,72 @@ button {
 	margin-top: 5vh;
 	font-family: inherit;
 	font-size: inherit;
+}
+
+.details {
+	background-color: #dedede;
+	text-align: left;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+}
+
+.details hr {
+	border-top: 5px solid white;
+}
+
+.inline_buttons {
+	display: flex;
+	justify-content: space-around;
+}
+
+#confirmation button {
+	width: 25%;
+}
+
+#ontime {
+	background-color: #39a340;
+}
+
+#late {
+	background-color: #ffb742;
+}
+
+#cancel {
+	background-color: #c73636;
+}
+
+#latecheckin button {
+	width: 40%;
+}
+
+.checkin_popup {
+	background-color: #dedede;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+}
+
+#complete_checkin {
+	background-color: #39a340;
+}
+
+#reschedule {
+	background-color: #ffb742;
+}
+
+#checkmark img {
+	height: 32px;
+}
+
+#hospitalmap {
+	margin-top: 5vh;
+}
+
+#hospitalmap img {
+	width: 100%;
 }
 /**********settings pages styling**********/
 .settings_content_section { /*sections for content layout on settings pages*/
