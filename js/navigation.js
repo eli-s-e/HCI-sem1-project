@@ -89,3 +89,11 @@ function goToComplete() {
 	latecheckin.style.display = "none";
 	complete.style.display = "block";
 }
+
+//home page confirmation for epr
+function eprConfirmation() {
+	var homepage = document.getElementById("homepage");
+	var eprconfirmation = document.getElementById("eprconfirmation");
+	homepage.style.display = "none";
+	eprconfirmation.style.display = "block";
+}

@@ -34,14 +34,14 @@
       <div id="progress_bar">
         <div id="progress"><h3 id="progresstext">20%</h3></div>
       </div>
-      <div class="checkin_step" id="step1">
+      <div class="section" id="step1">
         <div class="title_section">
           <h1>Please verify your mobile number. You will receive a confirmation text from us shortly.</h1>
         </div>
         <h1><input type="tel" id="mobile" /></h1>
         <button class="bigbutton" id="mobile_submit" onclick="goToStep2()"><h1>Verify</h1></button>
       </div>
-      <div class="checkin_step" id="step2">
+      <div class="section" id="step2">
         <div class="title_section">
           <h1>Please enter the 4-digit code you received via text.</h1>
         </div>
@@ -53,21 +53,21 @@
         </div>
         <button class="bigbutton" id="mobile_confirm" onclick="goToStep3()"><h1>Confirm</h1></button>
       </div>
-      <div class="checkin_step" id="step3">
+      <div class="section" id="step3">
         <div class="title_section">
           <h1>Please enter your date of birth.</h1>
         </div>
         <h1><input type="date" id="dob" /></h1>
         <button class="bigbutton" id="dobsubmit" onclick="goToStep4()"><h1>Confirm</h1></button>
       </div>
-      <div class="checkin_step" id="step4">
+      <div class="section" id="step4">
         <div class="title_section">
           <h1>Please enter your surname.</h1>
         </div>
         <h1><input type="text" id="surname" /></h1>
         <button class="bigbutton" id="surnamesubmit" onclick="goToConfirmation()"><h1>Confirm</h1></button>
       </div>
-      <div class="checkin_step" id="confirmation">
+      <div class="section" id="confirmation">
         <div class="title_section">
           <h1>Please confirm your appointment.</h1>
         </div>
@@ -86,7 +86,7 @@
           <button class="bigbutton" id="cancel" onclick="goToCancel()"><h1>Cancel appointment</h1></button>
         </div>
       </div>
-      <div class="checkin_step" id="latecheckin">
+      <div class="section" id="latecheckin">
         <div class="title_section">
           <h1>How late will you be?</h1>
           <div class="inline_buttons">
@@ -94,16 +94,16 @@
             <button class="bigbutton" id="10-" onclick="openPopup2()"><h1>More than 10 minutes</h1></button>
           </div>
         </div>
-        <div class="checkin_popup" id="popup1">
+        <div class="popup" id="popup1">
           <h2>Your doctor has been notified and will wait for you.</h2>
           <button class="bigbutton" id="complete_checkin" onclick="goToComplete()"><h1>Complete check in</h1></button>
         </div>
-        <div class="checkin_popup" id="popup2">
+        <div class="popup" id="popup2">
           <h2>Unfortunately, after 10 minutes your appointment will be cancelled automatically.</h2>
           <button class="bigbutton" id="reschedule"><h1>Call to reschedule</h1></button>
         </div>
       </div>
-      <div class="checkin_step" id="complete">
+      <div class="section" id="complete">
         <div class="title_section">
           <div id="checkmark"><img src="../img/tick.png"></div>
           <h1>Your appointment has been confirmed.</h1>

@@ -34,7 +34,27 @@
     </div>
   </header>
   <main>
-
+    <div class="main_content" id="centercontent">
+      <div class="section" id="homepage">
+        <div class="title_section">
+          <h1>Welcome, Firstname</h1>
+          <h3>Your next appointment is at [date].</h3>
+        </div>
+        <button class="bigbutton" id="appointmentsbutton"><a href="./appointments.html"><h1>Manage and view upcoming appointments</h1></a></button>
+        <button class="bigbutton" id="eprbutton" onclick="eprConfirmation()"><h1>View your electronic patient records (EPR)</h1></a></button>
+      </div>
+      <div class="section" id="eprconfirmation">
+        <div class="title_section">
+          <h1>To access your EPR, we will need email authentication.</h1>
+          <h3>This will be sent to el*******n@gmail.com.</h3>
+        </div>
+        <button class="bigbutton" id="emailauth"><a href="./home.html"><h1>Send authentication email</h1></a></button>
+      </div>
+    </div>
+    <div id="QRbanner">
+      <h2>Been asked for a QR code?</h2>
+      <span id="QRicon"><img src="../img/qr-code-icon.png" alt="qr code icon"></span>
+    </div>
   </main>
 </body>
 </html>

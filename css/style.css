@@ -39,7 +39,7 @@ main {
 
 button {
 	border: none;
-	border-radius: 0;
+	border-radius: 5px;
 	cursor: pointer;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -141,7 +141,7 @@ button {
 
 #logoutbutton {
 	background-color: #828282;
-	margin-top: 5vh;
+	margin-top: 2vh;
 	margin-left: 2vw;
 }
 
@@ -169,8 +169,8 @@ button {
 }
 
 .title_section { /*contains title and possibly description of pges*/
-	margin-left: 2vw;
-	margin-right: 2vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
 }
 
 /**********index page**********/
@@ -243,7 +243,7 @@ button {
 }
 
 #code_input input {
-	width: 15%;
+	width: 20%;
 	height: 2em;
 	padding-left: 2vw;
 	padding-right: 2vw;
@@ -290,7 +290,7 @@ button {
 	width: 40%;
 }
 
-.checkin_popup {
+.popup {
 	background-color: #dedede;
 	padding-left: 2vw;
 	padding-right: 2vw;
@@ -317,6 +317,16 @@ button {
 #hospitalmap img {
 	width: 100%;
 }
+
+/**********home page styling**********/
+#eprconfirmation {
+	display: none;
+}
+
+#emailauth {
+	background-color: #c73636;
+}
+
 /**********settings pages styling**********/
 .settings_content_section { /*sections for content layout on settings pages*/
 	margin-bottom: 10vh;
@@ -389,5 +399,15 @@ input:checked + .slider:before {
 @media(max-width: 792px) {
 	#main_content {
 		width: 100%;
+	}
+
+	#centercontent {
+		left: 5%;
+		width: 90%;
+	}
+
+	#QRbanner {
+		left: 5%;
+		width: 90%;
 	}
 }
