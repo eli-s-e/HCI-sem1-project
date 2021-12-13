@@ -28,7 +28,7 @@
         <div id="settingslinks">
           <li class="link"><a href="./userdetails.html"><h2>View and change user details</h2></a></li>
           <li class="link"><a href="./notifications.html"><h2>Notification settings</h2></a></li>
-        </div></li>
+        </div>
       </ul>
       <button id="logoutbutton"><a href="./index.html"><h2>Log out</h2></a></button>
     </div>
@@ -51,9 +51,15 @@
         <button class="bigbutton" id="emailauth"><a href="epr.html"><h1>Send authentication email</h1></a></button>
       </div>
     </div>
-    <div id="QRbanner">
+    <div id="QRbanner" onclick="toggleQR()">
       <h2>Been asked for a QR code?</h2>
       <span id="QRicon"><img src="../img/qr-code-icon.png" alt="qr code icon"></span>
+    </div>
+    <div id="QRpopupscreen"></div>
+    <div id="QRpopup">
+      <div id="closeicon" onclick="toggleQR()"><img src="../img/close.png"></div>
+      <h1>Please show this QR code to the member of staff.</h1>
+      <div id="QRimage"><img src="../img/qr-code-icon.png"></img></div>
     </div>
   </main>
 </body>

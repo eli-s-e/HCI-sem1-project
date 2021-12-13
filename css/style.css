@@ -76,7 +76,12 @@ button {
   height: inherit;
 }
 
-#navbar div img {
+#navbar div a {
+	text-decoration: none;
+	height: inherit;
+}
+
+#navbar div img, #navbar div a img {
   height: inherit;
 }
 
@@ -189,6 +194,7 @@ button {
 	border-top-right-radius: 25px;
 	display: flex;
 	justify-content: center;
+	cursor: pointer;
 }
 
 #QRbanner h2 {
@@ -201,6 +207,64 @@ button {
 	margin-top: 2vh;
 }
 
+#QRpopupscreen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000000;
+	opacity: 80%;
+	z-index: 1;
+	display: none;
+}
+
+#QRpopupscreen.active {
+	display: block;
+}
+
+#QRpopup {
+	position: fixed;
+	top: 10vh;
+	left: 37.5vw;
+	width: 25vw;
+	height: 80vh;
+	margin: auto;
+	padding-top: 2vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	background-color: #000000;
+	border-radius: 25px;
+	z-index: 2;
+	display: none;
+}
+
+#QRpopup.active {
+	display: block;
+}
+
+#QRpopup h1 {
+	color: #ffffff;
+}
+
+#closeicon {
+	margin-left: 20vw;
+	height: 40px;
+	width: 50px;
+	cursor: pointer;
+}
+
+#closeicon img {
+	height: 40px;
+}
+
+#QRimage {
+	margin-top: 5vh;
+}
+
+#QRimage img {
+	height: 200px;
+}
 /**********check in process**********/
 #progress_bar {
 	background-color: #dedede;
@@ -410,7 +474,26 @@ input:checked + .slider:before {
 	margin: auto;
 }
 
+#titlecard {
+	background-color: #ffffff;
+}
 
+.inline_details {
+	display: flex;
+	justify-content: space-between;
+}
+
+#patient1, #patient2 {
+	background-color: #39a340;
+}
+
+#patient3 {
+	background-color: #ffb742;
+}
+
+#patient4 {
+	background-color: #c73636;
+}
 /**********mobile or other device responsiveness settings**********/
 /**********these must be kept at bottom after css declarations**********/
 @media(max-width: 792px) {
@@ -426,5 +509,14 @@ input:checked + .slider:before {
 	#QRbanner {
 		left: 5%;
 		width: 90%;
+	}
+
+	#QRpopup {
+		width: 50vw;
+		left: 25vw;
+	}
+
+	#closeicon {
+		margin-left: 40vw;
 	}
 }

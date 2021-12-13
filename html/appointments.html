@@ -12,7 +12,7 @@
 <body>
   <header>
     <div id="navbar">
-      <div id="back_icon"><img src="../img/back.png" alt="back button"></div>
+      <div id="back_icon" onclick="history.back()"><img src="../img/back.png" alt="back button"></div>
       <div id="nhs_logo"><img src="../img/nhswslogo.png" alt="nhs logo"></div>
       <div id="menu_icon"><img src="../img/menuicon.png" alt="menu button" onclick="navigationToggle()"></div>
     </div>
@@ -30,7 +30,7 @@
           <li class="link"><a href="./notifications.html"><h2>Notification settings</h2></a></li>
         </div></li>
       </ul>
-      <button id="logoutbutton"><h2>Log out</h2></button>
+      <button id="logoutbutton"><a href="./index.html"><h2>Log out</h2></a></button>
     </div>
   </header>
   <main>

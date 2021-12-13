@@ -115,3 +115,11 @@ function faqExpand3() {
 	let nav = document.querySelector('#faqexpand3');
 	nav.classList.toggle('active');
 }
+
+//show and hide qr code
+function toggleQR() {
+	let nav = document.querySelector('#QRpopupscreen');
+	let nav2 = document.querySelector('#QRpopup');
+	nav.classList.toggle('active');
+	nav2.classList.toggle('active');
+}
