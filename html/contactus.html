@@ -12,7 +12,7 @@
 <body>
   <header>
     <div id="navbar">
-      <div id="back_icon"><img src="../img/back.png" alt="back button"></div>
+      <div id="back_icon" onclick="history.back()"><img src="../img/back.png" alt="back button"></div>
       <div id="nhs_logo"><img src="../img/nhswslogo.png" alt="nhs logo"></div>
       <div id="menu_icon"><img src="../img/menuicon.png" alt="menu button" onclick="navigationToggle()"></div>
     </div>
@@ -21,8 +21,8 @@
         <h1>Menu</h1>
       </div>
       <ul class="list">
+        <li class="link"><a href="./home.html"><h2>Home</h2></a></li>
         <li class="link"><a href="./appointments.html"><h2>Appointments</h2></a></li>
-        <li class="link"><a href="./checkin.html"><h2>Check in</h2></a></li>
         <li class="link"><a href="./contactus.html"><h2>Contact us</h2></a></li>
         <li class="link" onclick="settingsToggle()"><h2>Settings &#9660;</h2></li>
         <div id="settingslinks">
@@ -30,7 +30,7 @@
           <li class="link"><a href="./notifications.html"><h2>Notification settings</h2></a></li>
         </div></li>
       </ul>
-      <button id="logoutbutton"><h2>Log out</h2></button>
+      <button id="logoutbutton"><a href="./index.html"><h2>Log out</h2></a></button>
     </div>
   </header>
   <main>
@@ -57,8 +57,8 @@
           <h2>Where do I check in?</h2>
           <div id="faqexpand2">
             <h3>You can check in <a href="./checkin.html">here</a> or from the menu in the top right-hand
-              corner of the screen. If you have been asked for a QR code, you can find it <a href="">here</a>
-              or from the <a href="./checkin.html">home page</a>, which you can also access using the menu
+              corner of the screen. If you have been asked for a QR code, you can find it at the bottom of the
+              checkin page or the <a href="./home.html">home page</a>, which you can also access using the menu
               in the top right-hand corner of the screen.</h3>
           </div>
         </div>
@@ -68,7 +68,7 @@
             <h3>If you are late, you will be prompted to provide this information when completing the check in process.
               If you are 5-10 minutes late, your appointment will still go ahead, however if you are more than 10 mimutes late
               your appointment will be cancelled automatically and must be rescheduled. If you would like to reschedule an
-              appointment, you can do so <a href="">here.</a></h3>
+              appointment, you can do so by calling our reception. The number for reception is shown at the top of this page.
           </div>
         </div>
       </div>

@@ -84,15 +84,19 @@ function openPopup2() {
 }
 
 function goToComplete() {
+	var confirmation = document.getElementById("confirmation");
 	var latecheckin = document.getElementById("latecheckin");
 	var complete = document.getElementById("complete");
+	var back= document.getElementById("back_icon");
+	confirmation.style.display = "none";
 	latecheckin.style.display = "none";
 	complete.style.display = "block";
+	back.style.visibility = "hidden";
 }
 
 //home page confirmation for epr
 function eprConfirmation() {
-	var homepage = document.getElementById("homepage");
+	var patientinfo = document.getElementById("homepage");
 	var eprconfirmation = document.getElementById("eprconfirmation");
 	homepage.style.display = "none";
 	eprconfirmation.style.display = "block";

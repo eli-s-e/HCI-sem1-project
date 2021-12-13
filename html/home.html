@@ -12,7 +12,7 @@
 <body>
   <header>
     <div id="navbar">
-      <div id="back_icon"><img src="../img/back.png" alt="back button"></div>
+      <div id="back_icon" onclick="history.back()"><img src="../img/back.png" alt="back button"></div>
       <div id="nhs_logo"><img src="../img/nhswslogo.png" alt="nhs logo"></div>
       <div id="menu_icon"><img src="../img/menuicon.png" alt="menu button" onclick="navigationToggle()"></div>
     </div>
@@ -21,8 +21,8 @@
         <h1>Menu</h1>
       </div>
       <ul class="list">
+        <li class="link"><a href="./home.html"><h2>Home</h2></a></li>
         <li class="link"><a href="./appointments.html"><h2>Appointments</h2></a></li>
-        <li class="link"><a href="./checkin.html"><h2>Check in</h2></a></li>
         <li class="link"><a href="./contactus.html"><h2>Contact us</h2></a></li>
         <li class="link" onclick="settingsToggle()"><h2>Settings &#9660;</h2></li>
         <div id="settingslinks">
@@ -30,7 +30,7 @@
           <li class="link"><a href="./notifications.html"><h2>Notification settings</h2></a></li>
         </div></li>
       </ul>
-      <button id="logoutbutton"><h2>Log out</h2></button>
+      <button id="logoutbutton"><a href="./index.html"><h2>Log out</h2></a></button>
     </div>
   </header>
   <main>
@@ -41,14 +41,14 @@
           <h3>Your next appointment is at [date].</h3>
         </div>
         <button class="bigbutton" id="appointmentsbutton"><a href="./appointments.html"><h1>Manage and view upcoming appointments</h1></a></button>
-        <button class="bigbutton" id="eprbutton" onclick="eprConfirmation()"><h1>View your electronic patient records (EPR)</h1></a></button>
+        <button class="bigbutton" id="eprbutton" onclick="eprConfirmation()"><h1>View your electronic patient records (EPR)</h1></button>
       </div>
       <div class="section" id="eprconfirmation">
         <div class="title_section">
           <h1>To access your EPR, we will need email authentication.</h1>
           <h3>This will be sent to el*******n@gmail.com.</h3>
         </div>
-        <button class="bigbutton" id="emailauth"><a href="./home.html"><h1>Send authentication email</h1></a></button>
+        <button class="bigbutton" id="emailauth"><a href="epr.html"><h1>Send authentication email</h1></a></button>
       </div>
     </div>
     <div id="QRbanner">

@@ -225,7 +225,7 @@ button {
 	display: none;
 }
 
-#mobile, #dob, #surname {
+#mobile, #dob, #surname, #nhsid, #password {
 	width: 50%;
 	height: 2em;
 	padding-left: 2vw;
@@ -395,6 +395,21 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(26px);
 }
+
+/**********staff pages**********/
+.login_details {
+	width: 75%;
+}
+
+.login_details h2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.login_details label {
+	margin: auto;
+}
+
 
 /**********mobile or other device responsiveness settings**********/
 /**********these must be kept at bottom after css declarations**********/

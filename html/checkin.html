@@ -12,7 +12,7 @@
 <body>
   <header>
     <div id="navbar">
-      <div id="back_icon"><img src="../img/back.png" alt="back button"></div>
+      <div id="back_icon" onclick="history.back()"><img src="../img/back.png" alt="back button"></div>
       <div id="nhs_logo"><img src="../img/nhswslogo.png" alt="nhs logo"></div>
       <div id="menu_icon"><img src="../img/menuicon.png" alt="menu button" onclick="navigationToggle()"></div>
     </div>
@@ -81,7 +81,7 @@
           <h3>Location: Room 12</h3>
         </div>
         <div class="inline_buttons">
-          <button class="bigbutton" id="ontime"><a href="./home.html"><h1>I'm on time</h1></a></button>
+          <button class="bigbutton" id="ontime" onclick="goToComplete()"><h1>I'm on time</h1></button>
           <button class="bigbutton" id="late" onclick="goToLateCheckIn()"><h1>I'm late</h1></button>
           <button class="bigbutton" id="cancel" onclick="goToCancel()"><h1>Cancel appointment</h1></button>
         </div>
